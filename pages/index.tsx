@@ -31,7 +31,14 @@ const Index = () => {
         </li>
         <li>
           Add Emotion:{" "}
-          <code>yarn add @emotion/core @emotion/babel-preset-css-prop</code>
+          <code>
+            yarn add @emotion/core emotion emotion-server
+            @emotion/babel-preset-css-prop
+          </code>
+          <span>
+            Also make the changes as in _app & _document to use nth child or
+            similar selectors
+          </span>
         </li>
         <li>
           Add Eslint & Prettier:{" "}

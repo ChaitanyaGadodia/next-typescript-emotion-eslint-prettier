@@ -1,5 +1,5 @@
 import * as React from "react";
-import { css, Global } from "@emotion/core";
+import { css, Global } from "@emotion/react";
 
 const Index = () => {
   return (
@@ -7,7 +7,7 @@ const Index = () => {
       <Global
         styles={css`
           code {
-            color: red;
+            color: blue;
           }
         `}
       />
@@ -23,22 +23,17 @@ const Index = () => {
           Initialize package.json: <code>yarn init</code>
         </li>
         <li>
-          Add Next.js: <code>yarn add next, react, react-dom</code>
+          Add Next.js: <code>yarn add next react react-dom</code>
         </li>
         <li>
           Add Typescript:{" "}
           <code>yarn add --dev typescript @types/react @types/node</code>
         </li>
         <li>
-          Add Emotion:{" "}
-          <code>
-            yarn add @emotion/core emotion emotion-server
-            @emotion/babel-preset-css-prop
-          </code>
-          <span>
-            Also make the changes as in _app & _document to use nth child or
-            similar selectors
-          </span>
+          Add Emotion: <code>yarn add @emotion/react</code>
+          <div>
+            <code>yarn add @emotion/babel-plugin --dev</code>
+          </div>
         </li>
         <li>
           Add Eslint & Prettier:{" "}
@@ -65,8 +60,8 @@ const Index = () => {
                     dev: "next",
                     build: "next build",
                     start: "next start",
-                    lint: "eslint --fix './pages/**/*.{ts,tsx}'",
-                  },
+                    lint: "eslint --fix './pages/**/*.{ts,tsx}'"
+                  }
                 },
                 undefined,
                 2
@@ -102,12 +97,12 @@ const Index = () => {
                 {
                   husky: {
                     hooks: {
-                      "pre-commit": "lint-staged",
-                    },
+                      "pre-commit": "lint-staged"
+                    }
                   },
                   "lint-staged": {
-                    "*.{ts,tsx}": ["eslint --fix"],
-                  },
+                    "*.{ts,tsx}": ["eslint --fix"]
+                  }
                 },
                 undefined,
                 2

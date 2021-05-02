@@ -1,7 +1,6 @@
 # next-typescript-emotion-eslint-prettier
-Next.js Typescript Emotion Eslint Prettier Setup
+Next.js Emotion Eslint Prettier Template
 
-To checkout the setup steps requied in creating this template:
 ```
 yarn; yarn dev
 ```
